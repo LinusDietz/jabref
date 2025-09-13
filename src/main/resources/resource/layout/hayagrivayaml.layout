@@ -1,6 +1,6 @@
 \citationkey:
 \begin{entrytype}  type: \format[HayagrivaType]{\entrytype}\end{entrytype}
-\begin{title}  title: "\title"\end{title}
+\begin{title}  title: "\format[RemoveLatexCommands,HTMLChars]{\title}"\end{title}
 \begin{author}
   author:
     - \format[Authors(LastFirst, MiddleInitial, Sep =\n    - , LastSep =\n    - )]{\author}
@@ -9,16 +9,26 @@
 \begin{journal}
   parent:
     type: periodical
-    title: \journal
+    title: \format[RemoveLatexCommands,HTMLChars]{\journal}
 \end{journal}
     \begin{journal&&volume}volume: \volume\end{journal&&volume}
     \begin{journal&&number}issue: \number\end{journal&&number}
     \begin{journal&&publisher}publisher: \publisher\end{journal&&publisher}
-\begin{series}
+\begin{series&&!booktitle}
   parent:
     type: book
     title: "\series"
-\end{series}
+\end{series&&!booktitle}
+\begin{!series&&booktitle}
+  parent:
+    type: book
+    title: "\booktitle"
+\end{!series&&booktitle}
+\begin{series&&booktitle}
+  parent:
+   type: book
+   title: "\series"
+\end{series&&booktitle}
 \begin{editor&&number}  issue: \number\end{editor&&number}
 \begin{editor&&publisher}  publisher: \publisher\end{editor&&publisher}
 \begin{editor}  editor: \editor\end{editor}
@@ -31,4 +41,5 @@
 \begin{isbn}  isbn: \isbn\end{isbn}
 \begin{issn}  issn: \issn\end{issn}
 \begin{note}  note: \note\end{note}
+\begin{file}  aamlink: \file\end{file}
 

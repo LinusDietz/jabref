@@ -8,7 +8,7 @@ public class HayagrivaType implements LayoutFormatter {
     @Override
     public String format(String value) {
         return switch (StandardEntryType.valueOf(value)) {
-            case Article, Conference -> "article";
+            case Article, Conference, InCollection -> "article";
             case Book -> "book";
             case InBook -> "chapter";
             case Report, TechReport -> "report";

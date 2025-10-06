@@ -376,7 +376,6 @@ dependencies {
     implementation 'commons-io:commons-io:2.19.0'
 
     // Even if "compileOnly" is used, IntelliJ always adds to module-info.java. To avoid issues during committing, we use "implementation" instead of "compileOnly"
-    implementation 'io.github.adr:e-adr:2.0.0-SNAPSHOT'
 
     implementation 'io.zonky.test:embedded-postgres:2.1.0'
     implementation enforcedPlatform('io.zonky.test.postgres:embedded-postgres-binaries-bom:17.4.0')

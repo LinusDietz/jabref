@@ -56,7 +56,6 @@ import org.jabref.model.strings.StringUtil;
 import com.google.common.eventbus.Subscribe;
 import com.tobiasdiez.easybind.EasyBind;
 import com.tobiasdiez.easybind.EasyObservableList;
-import io.github.adr.linked.ADR;
 
 public class GroupNodeViewModel {
 
@@ -66,7 +65,6 @@ public class GroupNodeViewModel {
     private final BibDatabaseContext databaseContext;
     private final StateManager stateManager;
     private final GroupTreeNode groupNode;
-    @ADR(38)
     private final ObservableSet<String> matchedEntries = FXCollections.observableSet();
     private final SimpleBooleanProperty hasChildren;
     private final SimpleBooleanProperty expandedProperty = new SimpleBooleanProperty();

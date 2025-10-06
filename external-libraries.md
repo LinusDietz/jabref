@@ -879,7 +879,6 @@ dev.langchain4j:langchain4j-open-ai:0.36.2
 dev.langchain4j:langchain4j:0.36.2
 eu.lestard:doc-annotations:0.2
 info.debatty:java-string-similarity:2.0.0
-io.github.adr:e-adr:2.0.0-SNAPSHOT
 io.github.java-diff-utils:java-diff-utils:4.15
 io.github.stefanbratanov:jvm-openai:0.11.0
 io.github.thibaultmeyer:cuid:2.0.3
